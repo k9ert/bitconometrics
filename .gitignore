@@ -1,0 +1,23 @@
+# This file is listing other files which are not supposed to be managed
+# by the version-control-system git.
+
+# the python-environment
+.env
+# a folder internally used by jupyther for "autosave" purposes
+.ipynb_checkpoints
+# If you use the visual-studio-code editor
+.vscode
+
+# The follwing files (or file-patterns) are downloaded or created by the scripts
+
+data/blocks_*.csv
+data/flow_monthly.csv
+
+data/coinmetric_btc.csv
+data/coinmetric_btc_monthly.csv
+
+data/bitstampUSD.csv.gz
+data/bitstampUSD_monthly.csv
+
+data/gold_raw.csv
+data/gold_monthly.csv
