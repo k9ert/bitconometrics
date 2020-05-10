@@ -58,7 +58,7 @@ where only the dependencies for that specific project are installed.
 cd s2f-python             # change the directory to where you've unzipped the package above
 python3 -m venv .env      # Creating an empty virtual Environment
 . ./.env/bin/activate     # Activating the environment
-pip3 install cryptoadvance.specter numpy pandas pandas_datareader statsmodels jupyter 
+pip3 install cryptoadvance.specter numpy pandas pandas_datareader statsmodels jupyter matplotlib
                           # Installing the needed packages into the environment
 ```
 
