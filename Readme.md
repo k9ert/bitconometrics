@@ -32,8 +32,6 @@ The bold blue arrows represents the last step of the script which is doing the h
 * Downloads the pricedata from bitstamp if it's not yet downloaded
 * Resamples the pricedata to monthly data so that it can potentially be used for s2f calculation-cases
 
-This won't get used further as the earlist price from bitstamp is from 2011 but the original PlanB-model is using extrapolated price-data starting from 2009.
-
 ## [04_caclulation_s2f_monthly.ipynb](s2f-monthly/04_caclulation_s2f_monthly.ipynb)
 * This script is the only one specific to s2f-monthly and therefore it's located in that directory
 * loads the monthly flow-data in the main-table
@@ -58,8 +56,10 @@ where only the dependencies for that specific project are installed.
 
 ```
 cd bitconometrics         # change the directory to where you've unzipped the package above
-python3 -m venv .env      # Creating an empty virtual Environment
-. ./.env/bin/activate     # Activating the environment
+python3 -m venv .env      # Creating an empty virtual Environment in a 
+                          # hidden directory (files/dirs with a ".")
+source ./.env/bin/activate # Activating the environment by sourcing that file
+                          # which will modify the Env-Var PATH and so on
 pip3 install cryptoadvance.specter numpy pandas pandas_datareader statsmodels jupyter matplotlib
                           # Installing the needed packages into the environment
 ```
